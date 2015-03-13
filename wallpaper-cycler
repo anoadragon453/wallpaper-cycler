@@ -20,7 +20,7 @@ while true
 do
 	for f in "$pictdir"*
 	do
-	    sleep $time #wait for $time second(s)
 	    gsettings set org.gnome.desktop.background picture-uri "$pictdir$(basename "$f")"
+	    sleep $time #wait for $time second(s)
 	done
 done
